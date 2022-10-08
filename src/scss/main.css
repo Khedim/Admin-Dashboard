@@ -1,0 +1,61 @@
+:root {
+  --c-g: #eee;
+  --c-w: #fff;
+  --c-p: #777;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #f1f5f9;
+}
+
+section {
+  position: relative;
+  width: calc(100% - 205px);
+  left: 205px;
+  padding: 10px;
+  display: none;
+}
+section.curent {
+  display: block;
+}
+@media (max-width: 767px) {
+  section {
+    width: calc(100% - 85px);
+    left: 85px;
+  }
+}
+section h2 {
+  position: relative;
+  margin-bottom: 30px;
+}
+section h2::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  bottom: -10px;
+  left: 0;
+}
+section .grid {
+  background-color: var(--c-w);
+  border-radius: 6px;
+  padding: 20px 10px 10px;
+}
+section .grid .h3 {
+  font-size: 16px;
+}
+section .grid .p {
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0 10px;
+}/*# sourceMappingURL=main.css.map */

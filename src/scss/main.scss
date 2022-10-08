@@ -1,0 +1,62 @@
+// @import "./aside";
+// @import "./nav";
+// @import "./dashboard";
+// @import "./settings";
+// @import "./profile";
+// @import "./projects";
+// @import "./courses";
+// @import "./freinds";
+// @import "./files";
+// @import "./plans";
+:root {
+  --c-g: #eee;
+  --c-w: #fff;
+  --c-p: #777;
+}
+* {
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+body {
+  background-color: #f1f5f9;
+}
+section {
+  position: relative;
+  width: calc(100% - 205px);
+  left: 205px;
+  padding: 10px;
+  @media (max-width: 767px) {
+    width: calc(100% - 85px);
+    left: 85px;
+  }
+  h2 {
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #000;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+  .grid {
+    background-color: var(--c-w);
+    border-radius: 6px;
+    padding: 20px 10px 10px;
+    .h3 {
+      font-size: 16px;
+    }
+    & .p {
+      font-size: 12px;
+      color: #777;
+      margin: 5px 0 10px;
+    }
+  }
+}
